@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto","verdana";
+    margin: 0em;
+}
+
+h1{font-size: 4em;}
+h2{font-size: 2em;}
+h3{font-size: 3em;}
+p{font-size: 1.5em;}
+ul{list-style: none;}
+
+button{
+    font-size: 2em;
+    font-size: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0, 5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 5);
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 71, 179);
+}
+
+button:hover{
+    background-color: rgb(59, 170, 74);
+}
+
+#container p{
+    max-width: 1000px;
+    margin: auto;
+    color: rgb(0, 0, 0)
+}
+
+.color-acento{color: rgb(22, 71, 179)}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+
+header p{
+    margin: 0;
+    padding: 25px 100px;
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+    font-size: 2.7em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+}
+
+header a:hover{
+    color:  rgb(22, 71, 179);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 130vh;
+    color: rgb(8, 8, 8);
+    background-image:url("principal3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(235, 185, 23);
+}
+
+#hero button{
+    font-size: 2.5em;
+}
+
+#envios-gratis .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-productos{
+   background-color: rgb(30,30,30); 
+   color: rgb(235, 185, 23);
+   text-align: center;
+}
+
+#nuestros-productos .container{
+    padding: 10px 10px;
+}
+
+#nuestros-productos h2{
+    margin-top: 0;
+    color: white;
+}
+
+
+#nuestros-productos p{
+    display: none;
+    color: rgb(245, 245, 245);
+}
+
+#nuestros-productos .cartas{
+    background-position: center center;
+    background-size: cover;  
+    padding: 120px;
+    margin: 45px;
+    border-radius: 22px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 5);
+}
+
+.cartas:first-child{
+    background-image: url("mono37.jpg");
+}
+
+.cartas:nth-child(2){
+    background-image: url("accesorio1.jpg");
+}
+
+.cartas:nth-child(3){
+    background-image: url("reloj1.jpg");
+}
+
+#nuestras-politicas .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#nuestras-politicas li{
+    margin: 2px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color: rgb(30,30,30);
+    color: white;
+}
+
+#final h2{
+    font-size: 3vw;
+}
+
+#final button{
+    font-size: 1.8vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 15px;
+    padding: 2px;
+    color: rgb(100,100,100,100);
+    font-size: 1em;
+}
+
+@media(min-width:720px){
+    header{
+        position: fixed;
+        width: 1350px;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }  
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #envios-gratis .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #envios-gratis .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    #envios-gratis .img-container{
+        background-image: url("percha4.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+    }
+
+    #nuestros-productos .producs{
+        display: flex;
+        justify-content: center;
+    } 
+    
+    #nuestros-productos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-productos h3{
+        margin-top: 0;
+
+    }
+
+    #nuestros-productos .cartas{
+        padding: 25px;
+    }
+
+
+    #nuestras-politicas{
+        background-image: url("poli.jpg");
+        background-repeat: no-repeat;
+        background-size: 250px 250px;
+        background-position: calc(100vw - 500px) 30px;
+    }
+
+    #nuestras-politicas .container{
+        text-align: initial;
+    }
+
+    #nuestras-politicas ul{
+        margin-left: 100px;
+    }
+}
+
+
